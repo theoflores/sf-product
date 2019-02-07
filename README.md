@@ -23,8 +23,8 @@ L'intégration HTML des pages est disponible dans le dossier _integration/Produc
 
     URL | Contenu
     ----- | ----
-    /product | [Liste des produits](integration/index.html)
-    /product/create | [Formulaire ajout](integration/new.html)
-    /product/&lt;id&gt; | [Fiche détail produit](integration/show.html)
-    /product/&lt;id&gt;/update | [Formulaire modification](integration/edit.html)
-    /product/&lt;id&gt;/delete | [Formulaire suppression](integration/delete.html)
+    /product | [Liste des produits](integration/Product/index.html)
+    /product/create | [Formulaire ajout](integration/Product/new.html)
+    /product/&lt;id&gt; | [Fiche détail produit](integration/Product/show.html)
+    /product/&lt;id&gt;/update | [Formulaire modification](integration/Product/edit.html)
+    /product/&lt;id&gt;/delete | [Formulaire suppression](integration/Product/delete.html)
