@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<br>
+<br>
+<div class="container">
+<h1>Edit Product </h1>
+<hr>
+{{ form(form) }}
+</div>
+<center><a class="btn btn-dark" href="{{ path('product_index')}}" role="button">Cancel</a></center>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+
+
+
+<div class="container">
+    <h1>Product detail</h1>
+    <hr>
+    <p class="text-right">
+
+        <a class="btn btn-warning" href="{{ path('product_update', {'id': prod.id}) }}" role="button">Edit product</a>
+        <a class="btn btn-danger" href="{{ path('product_delete', {'id': prod.id}) }}" role="button">Delete product</a>
+        
+        
+    </p>
+    <table class="table table-borderless">
+        <tbody>
+        <tr>
+            <th scope="row">#</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row">Designation</th>
+            <td>{{ prod.designation }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Reference</th>
+            <td>{{ prod.reference }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Brand</th>
+            <td>{{ prod.brand }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Price</th>
+            <td>{{ prod.price }}€</td>
+        </tr>
+        <tr>
+            <th scope="row">Stock</th>
+            <td>{{ prod.stock }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Active</th>
+            {% if prod.active == 1 %}
+            <td><span class="badge badge-success">Yes</span></td>
+            {% elseif prod.active == null %}
+            <td><span class="badge badge-danger">No</span></td>
+            {% endif %}
+        </tr>
+        <tr>
+            <th scope="row">Description</th>
+            <td>
+                {{ prod.description|raw }}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
